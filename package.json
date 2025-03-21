@@ -1,0 +1,51 @@
+{
+	"author": {
+		"name": "Baptiste Pillot",
+		"email": "baptiste@pillot.fr"
+	},
+	"dependencies": {
+	},
+	"description": "A flexible and accessible customizable main menu component with sidebar layout",
+	"devDependencies": {
+		"sass": "^1.83",
+		"typescript": "~5.6"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"exports": "./cjs/menu.js",
+	"homepage": "https://it.rocks",
+	"files": [
+		"LICENSE",
+		"README.md",
+		"cjs/*",
+		"css/*",
+		"!*.map"
+	],
+	"keywords": [
+		"component",
+		"front-end",
+		"it.rocks",
+		"layout",
+		"menu",
+		"navigation",
+		"responsive",
+		"sidebar",
+		"template",
+		"UI",
+		"UX",
+		"web"
+	],
+	"license": "ISC",
+	"name": "@itrocks/menu",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itrocks-ts/menu.git"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.json && cp src/*.html cjs/ && npm run build:css",
+		"build:css": "sass --no-source-map src:css"
+	},
+	"types": "./cjs/menu.d.ts",
+	"version": "0.0.1"
+}
