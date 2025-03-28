@@ -43,9 +43,9 @@
 		"url": "git+https://github.com/itrocks-ts/menu.git"
 	},
 	"scripts": {
-		"build": "tsc -p tsconfig.json && cp src/*.html cjs/ && npm run build:css",
+		"build": "tsc && cp src/*.html cjs/ && npm run build:css",
 		"build:css": "sass --no-source-map src:css"
 	},
 	"types": "./cjs/menu.d.ts",
-	"version": "0.0.1"
+	"version": "0.0.2"
 }
