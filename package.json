@@ -46,5 +46,5 @@
 		"build:css": "sass --no-source-map src:css"
 	},
 	"types": "./cjs/menu.d.ts",
-	"version": "0.0.3"
+	"version": "0.0.4"
 }

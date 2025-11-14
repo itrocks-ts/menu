@@ -24,31 +24,35 @@ export class Menu
 
 }
 
-export class MenuBlock
+class MenuCommons
 {
 
-	items: MenuItem[] = []
+	constructor(public title: string)
+	{}
 
-	title: string
-
-	constructor(title:string)
+	get class()
 	{
-		this.title = title
+		return this.title.toLowerCase().replace(/[^a-z0-9]/g, '-')
 	}
 
 }
 
-export class MenuItem
+export class MenuBlock extends MenuCommons
+{
+
+	items: MenuItem[] = []
+
+}
+
+export class MenuItem extends MenuCommons
 {
 
 	link: string
 
-	title: string
-
 	constructor(title: string, link: string)
 	{
-		this.link  = link
-		this.title = title
+		super(title)
+		this.link = link
 	}
 
 }
