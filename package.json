@@ -22,15 +22,23 @@
 		"!*.map"
 	],
 	"keywords": [
+		"bar",
 		"component",
 		"front-end",
+		"html",
 		"it.rocks",
 		"layout",
+		"main",
+		"main-menu",
 		"menu",
 		"navigation",
+		"navigation-bar",
 		"responsive",
 		"sidebar",
+		"sidebar-menu",
+		"standard",
 		"template",
+		"view",
 		"UI",
 		"UX",
 		"web"
@@ -46,5 +54,5 @@
 		"build:css": "sass --no-source-map src:css"
 	},
 	"types": "./cjs/menu.d.ts",
-	"version": "0.0.5"
+	"version": "0.0.6"
 }
