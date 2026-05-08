@@ -7,10 +7,10 @@
 	"description": "A flexible and accessible customizable main menu component with sidebar layout",
 	"devDependencies": {
 		"sass": "^1.95",
-		"typescript": "~5.9"
+		"typescript": "^6.0"
 	},
 	"engines": {
-		"node": ">=18"
+		"node": ">=24"
 	},
 	"exports": "./cjs/menu.js",
 	"homepage": "https://it.rocks",
@@ -18,8 +18,8 @@
 		"config.yaml",
 		"LICENSE",
 		"README.md",
-		"cjs/*",
-		"css/*",
+		"cjs",
+		"css",
 		"!*.map"
 	],
 	"keywords": [
@@ -54,6 +54,5 @@
 		"build": "tsc && cp src/*.html cjs/ && npm run build:css",
 		"build:css": "sass --no-source-map src:css"
 	},
-	"types": "./cjs/menu.d.ts",
-	"version": "0.1.1"
+	"version": "0.1.2"
 }
